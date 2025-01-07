@@ -1,5 +1,7 @@
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ben Mattson</title>
         <style>
         h1 {text-align: center;}
@@ -56,6 +58,28 @@
             }
             .social-link.github img {
                 content: url("github_mark_light.png.webp");
+            }
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding-top: 30px;
+            }
+            .profile-picture {
+                width: 120px;
+                height: 120px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            .social-links {
+                gap: 15px;
+            }
+            .social-link img {
+                width: 28px;
+                height: 28px;
+            }
+            a {
+                font-size: 14px;
             }
         }
         </style>
