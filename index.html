@@ -1,17 +1,83 @@
 <html>
     <head>
+        <title>Ben Mattson</title>
         <style>
         h1 {text-align: center;}
         p {text-align: center;}
         div {text-align: center;}
         body {
             font-family: "Courier New", Courier, monospace;
+            justify-content: center;
+            /* align-items: center; */
+            text-align:center;
+            display: flex;
+        }
+        .container {
+            text-align: center;
+            padding-top: 50px;
+            width: 100%; 
+            max-width: 600px; 
+            text-align: center;
+        }
+        .profile-picture {
+            width: 150px; 
+            height: 150px; 
+            border-radius: 50%; 
+            object-fit: cover; 
+            /* margin-bottom: 10px;  */
+        }
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+        .social-link {
+            display: flex;
+            align-items: center;
+            
+            gap: 10px;
+        }
+        .social-link img {
+            width: 24px;
+            height: 24px;
+        }
+            /* Dark mode styles */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #121212; /* Dark background */
+                color: #fff; /* White text */
+            }
+            a {
+                color: #bbb; /* Lighter link color for dark mode */
+            }
+            a:hover {
+                color: #4caf50; /* Example hover color for dark mode */
+            }
+            .social-link.github img {
+                content: url("github_mark_light.png.webp");
+            }
         }
         </style>
     </head>
-<body>
-
-<h1>Ben Mattson</h1>
-
-</body>
+    <body>
+        <div class="container">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-picture">
+            <h1>Ben Mattson</h1>
+            <div class="social-links">
+                <div class="social-link">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo">
+                    <a href="https://www.linkedin.com/in/benjaminrmattson/" target="_blank">LinkedIn</a>
+                </div>
+                <div class="social-link">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+                    <a href="https://www.instagram.com/benrmattson/" target="_blank">Instagram</a>
+                </div>
+                <div class="social-link github">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub Logo">
+                    <a href="https://github.com/benmattson7" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
